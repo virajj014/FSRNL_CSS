@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* .grid-container {
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 3fr 1fr;
+    gap: 10px;
+
+
+        display: grid;
+        grid-template-areas: none
+            "header header header"
+            "sidebar body body"
+            "footer footer footer";
+        ;
+    } */
+
+    /* .grid-item {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        border: 2px solid black;
+    } */
+
+    /* .item1 {
+        grid-area: header;
+    }
+
+    .item2 {
+        grid-area: sidebar;
+    } */
+
+
+
+    /* ------------------------------------------ */
+    .item1 {
+        grid-area: header;
+        background-color: red;
+        padding: 20px;
+    }
+
+    .item2 {
+        grid-area: sidebar;
+        background-color: green;
+        height: 500px;
+    }
+
+    .item3 {
+        grid-area: body;
+        background-color: blue;
+    }
+
+    .item4 {
+        grid-area: footer;
+        background-color: yellow;
+        height: 200px;
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-areas:
+            'header header header'
+            'sidebar body body'
+            'footer footer footer'
+        ;
+
+        gap: 10px;
+    }
+
+    .flex-layout{
+        display: flex;
+        /* background-color: aqua; */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .flexrow1{
+        width: 100%;
+    }
+    .flexrow1 .flexitem11{
+        background-color: red;
+        height: 100px;
+    }
+
+    .flexrow2{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+
+    .flexrow2 .flexitem21{
+        background-color: green;
+        width: 33%;
+        height: 500px;
+    }
+    .flexrow2 .flexitem22{
+        background-color: blue;
+        width: 66%;
+    }
+
+    .flexrow3{
+        width: 100%;
+    }
+    .flexrow3 .flexitem31{
+        background-color: yellow;
+        height: 200px;
+        
+    }
+</style>
+
+<body>
+    <!-- <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        
+    </div> -->
+
+    <div class="grid-layout">
+        <div class="item1">Header</div>
+        <div class="item2">Sidebar</div>
+        <div class="item3">Body</div>
+        <div class="item4">Footer</div>
+    </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+    <div class="flex-layout">
+        <div class="flexrow1">
+            <div class="flexitem11">Header</div>
+        </div>
+        <div class="flexrow2">
+            <div class="flexitem21">Sidebar</div>
+            <div class="flexitem22">Body</div>
+        </div>
+        <div class="flexrow3">
+            <div class="flexitem31">Footer</div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
